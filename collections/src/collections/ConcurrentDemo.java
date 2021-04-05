@@ -2,9 +2,10 @@ package collections;
 
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.Vector;
 
 public class ConcurrentDemo {
-	static ArrayList<String> arrayList = new ArrayList<String>();
+	static Vector<String> arrayList = new Vector<String>();
 	public void run() {
 		try {
 			Thread.sleep(2000);
@@ -22,7 +23,7 @@ public class ConcurrentDemo {
 		arrayList.add("d");
 		
 		ConcurrentDemo concurrentDemo = new ConcurrentDemo();
-		
+		concurrentDemo.start();
 		
 		Iterator<String> iterator = arrayList.iterator();
 		while(iterator.hasNext()) {
@@ -35,4 +36,7 @@ public class ConcurrentDemo {
 		
 		
 	}
+
+	
+	
 }
