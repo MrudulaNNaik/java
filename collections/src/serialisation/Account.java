@@ -16,9 +16,9 @@ public class Account implements Serializable {
 	
 	private void readObject(ObjectInputStream ois) throws IOException {
 		String[] unpwd = ois.readUTF().split(",");
-		this.userName = unpwd[0].substring(3);
+		this.userName = unpwd[0].substring(3);;
 		this.password = unpwd[1].substring(3);
-		
+
 		
 	}
 }
