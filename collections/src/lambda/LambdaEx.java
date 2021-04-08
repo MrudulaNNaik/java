@@ -4,11 +4,12 @@ import java.util.function.Function;
 
 public class LambdaEx {
 	public static void main(String[] args) {
-		int sq4 = squareIt(4);
-		System.out.println(sq4);
 		
-		Function<Integer,Integer> f = i -> i*i;
-		System.out.println(f.apply(5));
+		//FuncInterface fi = () -> System.out.println("hello");
+		//fi.m1();
+		
+	 ISum s = (int a,int b)-> (a+b); 
+	 System.out.println(s.add(10, 52));
 		
 	}
 
