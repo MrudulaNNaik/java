@@ -3,6 +3,6 @@ package method.reference.constructor;
 
 
 public interface ISample {
-	public Sample get();
+	public Sample get(String string);
 
 }
