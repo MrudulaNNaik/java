@@ -1,6 +1,7 @@
 package streamapi;
 
-public class Employee implements Comparable<Employee> {
+public class Employee{ 
+// implements Comparable<Employee> {
 	String name;
 	int id;
 	public Employee(String name, int id) {
@@ -11,14 +12,14 @@ public class Employee implements Comparable<Employee> {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return this.id + " " + this.name;
+		return this.name + " " + this.id;
 	} 
 	
-	@Override
-	public int compareTo(Employee o) {
-		return (this.id  > o.id)? 1
-				: (this.id < o.id)?-1 : 0;
-	}
+	//@Override
+	//public int compareTo(Employee o) {
+		//return (this.id  > o.id)? 1
+			//	: (this.id < o.id)?-1 : 0;
+	//}
 	
 	
 
