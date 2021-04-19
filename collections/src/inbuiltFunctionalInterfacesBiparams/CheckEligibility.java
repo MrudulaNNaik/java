@@ -11,10 +11,10 @@ public class CheckEligibility {
 		BiPredicate<Integer,Integer> bip1 = (age,marks) -> (age >= 18);
 		BiPredicate<Integer,Integer> bip2 = (age,marks) -> (marks > 60);
 		if (bip1. and (bip2).test(pupil.age, pupil.marks)) {
-			System.out.println(pupil.name+" elgible");
+		System.out.println("Eligible"); 
 		}
 		else {
-			System.out.println(pupil.name+" not elgible");
+		System.out.println("not eligible");
 		}
 			
 	}

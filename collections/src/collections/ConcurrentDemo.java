@@ -23,7 +23,7 @@ public class ConcurrentDemo {
 		arrayList.add("d");
 		
 		ConcurrentDemo concurrentDemo = new ConcurrentDemo();
-		concurrentDemo.start();
+		//concurrentDemo.start();
 		
 		Iterator<String> iterator = arrayList.iterator();
 		while(iterator.hasNext()) {
@@ -35,6 +35,7 @@ public class ConcurrentDemo {
 		System.out.println(arrayList);
 		
 		
+	
 	}
 
 	

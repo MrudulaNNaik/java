@@ -6,6 +6,7 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 public class Account implements Serializable {
+
 	String userName = "Mrudula";
 	transient String password = "NAIK";
 	

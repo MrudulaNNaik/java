@@ -22,9 +22,9 @@ public class DemoSerialisation {
 		
 		// de-serialisation
 		
-		FileInputStream fis;
+		//FileInputStream fis;
 		try {
-			fis = new FileInputStream("dxc.txt");
+			FileInputStream fis = new FileInputStream("dxc.txt");
 			ObjectInputStream ois = new ObjectInputStream(fis);
 			Dog d2 = (Dog)ois.readObject();
 			System.out.println(d2.i +"\t"+ d2.j);

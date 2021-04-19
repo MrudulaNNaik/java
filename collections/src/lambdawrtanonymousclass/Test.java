@@ -11,7 +11,7 @@ public class Test {
 		};
 		employee.eat();
 		
-		Thread t = new Thread() {
+		/*Thread t = new Thread() {
 			public void run() {
 				System.out.println("child thread");
 			}
@@ -30,9 +30,10 @@ public class Test {
 		Thread t1 = new Thread(r);
 		t1.start();
 			
-		}
+		}*/
 		
 		
 	}
+}
 
 

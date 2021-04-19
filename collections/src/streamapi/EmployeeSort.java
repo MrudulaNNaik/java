@@ -24,12 +24,17 @@ public class EmployeeSort {
 		List<Employee> sortedList = emplList.stream().sorted(c).collect(Collectors.toList())	;	
 		System.out.println(sortedList);
 		
-		Employee idmax = emplList.stream().max((e1,e2) -> e2.compareTo(e1)).get();
-		System.out.println("Employee with max salary: " +idmax.toString());
+		//Employee salmax = emplList.stream().max((e1,e2) -> e2.compareTo(e1)).get();
+		//System.out.println("Employee with max salary: " +salmax.toString());
 		
-		Employee idmin = emplList.stream().min((e1,e2) -> e2.compareTo(e1)).get();
-		System.out.println("Employee with min salary: " + idmin.toString());
+		//Employee salmin = emplList.stream().min((e1,e2) -> e2.compareTo(e1)).get();
+		//System.out.println("Employee with min salary: " + salmin.toString());
 		
+		sortedList.forEach(System.out::println);
+		
+		Employee[] employees = (Employee[]) sortedList.stream().toArray();
+		
+	    
 	}
 
 }
